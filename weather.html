@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Weather</title>
+</head>
+<script src="weather.js"></script>
+
+<body>
+    <div class="container-fluid " style=" background:pink; height: 100vh;">
+        <div class="row bg-dark justify-content-center align-items-center  " style="height: 3.5rem;">
+            <div class="col text-light d-flex justify-content-center" style="font-size: 1.3rem;">Weather Cast</div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
+            <div class="col-4 p-0 rounded"><input class="form-control" type="text" placeholder="Enter the city"
+                    id="textId">
+            </div>
+            <div class="col-1  p-0 rounded"><button type="button" class="btn btn-outline-secondary btn-block"
+                    onclick="getWeather()">Search</button>
+            </div>
+        </div>
+
+        <!-- Clonning part -->
+        <div class="d-flex flex-column justify-content-center align-items-center " id="mainBox">
+            <div class="row  justify-content-center mt-2" style="height: 18vh; width:80vh; visibility: hidden;"
+                id="parent">
+                <div class="col cl-md-4 bg-light rounded  d-flex align-items-center justify-content-center"
+                    style="font-size: 1.2rem; font-family: cursive;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
